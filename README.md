@@ -6,7 +6,7 @@ This is a clustering project using Python on a data set of patients that suffere
 
 Heart failure happens when the heart is unable to pump the amount of blood required by the rest of the body. In their paper ["Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone"](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-1023-5), Davide Chicco and Giuseppe Jurman show that machine learning classifiers can be used to predict whether or not a given patient with heart failure will survive. 
 
-In this project, we use the same data set but, instead of classification, we use it for clustering, with the intent that a doctor might use this information to identify which groups of patients are at higher risk.
+In this project, we use the same data set but, instead of classification, we use it for clustering, with the intent that a doctor might use this information to identify in how much risk each group of patients is.
 
 The file *heart_failure_clinical_records_dataset.csv* was downloaded from https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records at 15:17 (BRT) of 12/08/2022.
 
@@ -56,6 +56,6 @@ As we can see, this is a very different result from the one obtained for the k-m
 
 ## 6. Conclusion
 
-According to Chicco and Jurman, the ejection fraction and level of serum creatinine of a patient who had heart failure are enough to predict whether or not that patient will survive. Inspired by this result, we used the same data set and these same two attributes, but for clustering, with the intent that a doctor might use this information to identify patients who are at higher risk.
+According to Chicco and Jurman, the ejection fraction and level of serum creatinine of a patient who had heart failure are enough to predict whether or not that patient will survive. Inspired by this result, we used the same data set and these same two attributes, but for clustering, with the intent that a doctor might use this information to identify which groups patients are at higher risk.
 
 We employed three different clustering algorithms: k-means, hierarchical clustering and DBSCAN. While the first two led to similar results, the third one led to a significantly different clustering. All three of the results might be useful in a doctor’s hands to determine the danger to a given patient.
